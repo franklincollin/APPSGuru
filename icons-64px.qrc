@@ -1,0 +1,23 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons-64px/001-left-arrow.png</file>
+        <file>icons-64px/002-right-arrow.png</file>
+        <file>icons-64px/003-zoom-out.png</file>
+        <file>icons-64px/004-zoom-in.png</file>
+        <file>icons-64px/005-magnifying-glass-icon.png</file>
+        <file>icons-64px/006-information-button.png</file>
+        <file>icons-64px/007-settings-work-tool.png</file>
+        <file>icons-64px/008-user.png</file>
+        <file>icons-64px/009-refresh-button.png</file>
+        <file>icons-64px/010-cancel-button.png</file>
+        <file>icons-64px/011-medal.png</file>
+        <file>icons-64px/012-pencil.png</file>
+        <file>icons-64px/013-user-list.png</file>
+        <file>icons-64px/014-tool.png</file>
+        <file>icons-64px/015-home-page.png</file>
+        <file>icons-64px/016-remove.png</file>
+        <file>icons-64px/017-menu-button-of-three-horizontal-lines.png</file>
+        <file>icons-64px/013-user-list.svg</file>
+        <file>icons-64px/warning.png</file>
+    </qresource>
+</RCC>

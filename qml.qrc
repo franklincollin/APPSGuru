@@ -1,0 +1,47 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>FragmentHome.qml</file>
+        <file>FragmentEdit.qml</file>
+        <file>FragmentView.qml</file>
+        <file>Navbar.qml</file>
+        <file>NavFragment.qml</file>
+        <file>DrawerMenuProfile.qml</file>
+        <file>TabIndicator.qml</file>
+        <file>DrawerHeader.qml</file>
+        <file>DrawerMenuSettings.qml</file>
+        <file>DrawerMenuAbout.qml</file>
+        <file>EditTextHomeFragment.qml</file>
+        <file>ProfileDetailBox.qml</file>
+        <file>StudentListBox.qml</file>
+        <file>FragmentEditMenu.qml</file>
+        <file>LateStudentDetail.qml</file>
+        <file>PunishmentPointInput.qml</file>
+        <file>App.qml</file>
+        <file>StudenListModel.qml</file>
+        <file>AppreciationPointInput.qml</file>
+        <file>DeleteData.qml</file>
+        <file>UpdateDataLayout.qml</file>
+        <file>ProfilePictureContainer.qml</file>
+        <file>ProfileLayout.qml</file>
+        <file>AboutLayout.qml</file>
+        <file>LoginLayout.qml</file>
+        <file>Line.qml</file>
+        <file>NavbarWithoutDrawer.qml</file>
+        <file>DeletePunishmentData.qml</file>
+        <file>DeleteAppreciationData.qml</file>
+        <file>NavDeleteFragment.qml</file>
+        <file>InternetWarningDialog.qml</file>
+        <file>EmptyDataWarning.qml</file>
+        <file>BlackBackgroud.qml</file>
+        <file>PunishedStudentDescription.qml</file>
+        <file>UpdatePunishmentData.qml</file>
+        <file>UpdateAppreciationData.qml</file>
+        <file>AppreciatedStudentDescription.qml</file>
+        <file>EditDataLayout.qml</file>
+        <file>EditableStudentDescription.qml</file>
+        <file>WarningDialog.qml</file>
+        <file>EditableStudentDescription1.qml</file>
+        <file>FetchingDataIndicator.qml</file>
+    </qresource>
+</RCC>

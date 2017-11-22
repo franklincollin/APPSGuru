@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/icons">
+        <file>Icons/user.png</file>
+        <file>Icons/settings-work-tool.png</file>
+        <file>Icons/musica-searcher.png</file>
+        <file>Icons/mechanical-pen.png</file>
+        <file>Icons/information-button.png</file>
+        <file>Icons/008-internet.png</file>
+        <file>Icons/004-list-with-dots.png</file>
+        <file>Icons/002-user-list.png</file>
+        <file>Icons/ICON.png</file>
+        <file>Icons/007-pencil.png</file>
+        <file>Icons/008-pencil.png</file>
+        <file>Icons/005-delete-button.png</file>
+        <file>Icons/002-refresh-button.png</file>
+        <file>Icons/002-medal.png</file>
+        <file>Icons/down-arrow.png</file>
+        <file>Icons/right-arrow.png</file>
+        <file>Icons/menu.png</file>
+        <file>Icons/left-arrow.png</file>
+        <file>Icons/001-zoom-in.png</file>
+        <file>Icons/004-delete-button.png</file>
+        <file>Icons/001-remove.png</file>
+        <file>Icons/APPS_ICON.png</file>
+    </qresource>
+</RCC>

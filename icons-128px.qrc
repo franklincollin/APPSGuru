@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>icons-128px/001-left-arrow.png</file>
+        <file>icons-128px/002-right-arrow.png</file>
+        <file>icons-128px/003-zoom-out.png</file>
+        <file>icons-128px/004-zoom-in.png</file>
+        <file>icons-128px/005-magnifying-glass-icon.png</file>
+        <file>icons-128px/006-information-button.png</file>
+        <file>icons-128px/007-settings-work-tool.png</file>
+        <file>icons-128px/008-user.png</file>
+        <file>icons-128px/009-refresh-button.png</file>
+        <file>icons-128px/010-cancel-button.png</file>
+        <file>icons-128px/011-medal.png</file>
+        <file>icons-128px/012-pencil.png</file>
+        <file>icons-128px/013-user-list.png</file>
+        <file>icons-128px/014-tool.png</file>
+        <file>icons-128px/015-home-page.png</file>
+        <file>icons-128px/016-remove.png</file>
+        <file>icons-128px/017-menu-button-of-three-horizontal-lines.png</file>
+        <file>../Downloads/APPS/icons-128px/Keluar.png</file>
+    </qresource>
+</RCC>
