@@ -1,4 +1,4 @@
-#include "httplogin.h"
+#include "../header_files/httplogin.h"
 #include <QQmlProperty>
 
 HTTPLogin::HTTPLogin(QObject *parent) : QObject(parent)
@@ -8,7 +8,7 @@ HTTPLogin::HTTPLogin(QObject *parent) : QObject(parent)
 
 void HTTPLogin::getLoginData(const QString param, const QString param1){
     qDebug() << "Data from getLoginData(): " << param << param1;
-    QUrl url("https://appsapis.000webhostapp.com/LoginScript/superUserLogin.php");
+    QUrl url("http://doublef.xyz/LoginScript/superUserLogin.php");
 
     setBusyIndicatorRun(this->anItem);
     setWarningTexInvisible(this->anItem);
@@ -30,7 +30,7 @@ void HTTPLogin::getLoginData(const QString param, const QString param1){
 
         if(testArray[0] == "login true") {
             emit sendHTTPResponse(httpRAction.httpStringResponse(), testArray[1], testArray[2],
-                    testArray[3], testArray[4], testArray[5], testArray[6]);
+                    testArray[3], testArray[4], testArray[5], testArray[6], param);
         }
         else {
             setBusyIndicatorStop(this->anItem);

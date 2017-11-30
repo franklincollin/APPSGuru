@@ -1,5 +1,5 @@
-#include "getappreciationdata.h"
-#include "httpraction.h"
+#include "../header_files/getappreciationdata.h"
+#include "../header_files/httpraction.h"
 #include <QQuickView>
 #include <QQuickItem>
 #include <QDate>
@@ -20,7 +20,7 @@ void GetAppreciationData::getAppreciationData(const QString data, int data1, con
     QString currentDateTime = dateTime.currentDateTime().toString(Qt::ISODate);
     QString appreciationID = QString::number(data1);
 
-    QUrl url("https://appsapis.000webhostapp.com/InputDataScript/inputAppreciationData.php");
+    QUrl url("http://doublef.xyz/InputDataScript/inputAppreciationData.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);

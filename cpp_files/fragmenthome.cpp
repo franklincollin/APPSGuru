@@ -1,6 +1,6 @@
-#include "fragmenthome.h"
-#include "dataobject.h"
-#include "httpraction.h"
+#include "../header_files/fragmenthome.h"
+#include "../header_files/dataobject.h"
+#include "../header_files/httpraction.h"
 
 FragmentHome::FragmentHome(QObject *parent) : QObject(parent)
 {
@@ -17,7 +17,7 @@ void FragmentHome::teacherActivityLogListing(){
 
     qDebug() << "Teacher Log Listing";
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/getTeacherActivityLog.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/getTeacherActivityLog.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);

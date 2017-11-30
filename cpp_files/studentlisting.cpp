@@ -1,8 +1,8 @@
-#include "studentlisting.h"
-#include "systemvariable.h"
-#include "httpraction.h"
+#include "../header_files/studentlisting.h"
+#include "../header_files/systemvariable.h"
+#include "../header_files/httpraction.h"
 #include <QObject>
-#include "dataobject.h"
+#include "../header_files/dataobject.h"
 
 StudentListing::StudentListing(QObject *parent) : QObject(parent)
 {
@@ -19,7 +19,7 @@ void StudentListing::receiveStudentListing(QString data, QString data1){
 
     setFetchingDataIndicatorRun(this->anObject);
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/getPunishmentData.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/getPunishmentData.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);
@@ -36,7 +36,7 @@ void StudentListing::receiveStudentListing(QString data, QString data1){
     if(!httpRAction.NetworkError) {
         setFetchingDataIndicatorStop(this->anObject);
 
-        if(httpRAction.httpStringResponse() == "fail") {
+        if(httpRAction.httpStringResponse() == "unregistered") {
             setFetchingDataIndicatorStop(this->anObject);
             setEmptyDataWarningVisible(this->anObject);
         }
@@ -60,7 +60,7 @@ void StudentListing::receiveStudentListing(QString data, QString data1){
 void StudentListing::receiveStudentDataID(QString dataID, QString data) {
     setFetchingDataIndicatorRun(this->anObject);
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/punishmentDescription.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/punishmentDescription.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);
@@ -86,7 +86,7 @@ void StudentListing::receiveStudentDataID(QString dataID, QString data) {
 }
 
 void StudentListing::deletePunishmentData(QString arg0){
-    QUrl url("https://appsapis.000webhostapp.com/DeleteDataScript/deletePunishmentData.php");
+    QUrl url("http://doublef.xyz/DeleteDataScript/deletePunishmentData.php");
     qDebug() << "This data will deleted: " << arg0;
 
     setFetchingDataIndicatorRun(this->anObject);

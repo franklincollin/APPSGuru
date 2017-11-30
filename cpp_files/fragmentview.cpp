@@ -1,6 +1,6 @@
-#include "fragmentview.h"
-#include "httpraction.h"
-#include "dataobject.h"
+#include "../header_files/fragmentview.h"
+#include "../header_files/httpraction.h"
+#include "../header_files/dataobject.h"
 
 FragmentView::FragmentView(QObject *parent) : QObject(parent)
 {
@@ -15,7 +15,7 @@ FragmentView::FragmentView(QQmlContext *ctx, QObject *anItem){
 void FragmentView::studentDataListing(QString arg){
     qDebug() << "Teacher Log Listing";
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/getStudentList.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/getStudentList.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);

@@ -1,5 +1,5 @@
 #include <QDebug>
-#include "dataobject.h"
+#include "../header_files/dataobject.h"
 
 DataObject::DataObject(QObject *parent)
     : QObject(parent)

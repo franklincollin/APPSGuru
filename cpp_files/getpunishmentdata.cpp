@@ -1,5 +1,5 @@
-#include "getpunishmentdata.h"
-#include "httpraction.h"
+#include "../header_files/getpunishmentdata.h"
+#include "../header_files/httpraction.h"
 #include <QTime>
 #include <QDateTime>
 #include <QTimeZone>
@@ -20,7 +20,7 @@ void GetPunishmentData::getPunishmentStrings(const QString data, int data1, cons
     setWarningMessageInternetInvisible(this->anObject);
     setSendDataIndicatorRun(this->anObject);
 
-    QUrl url("https://appsapis.000webhostapp.com/InputDataScript/inputPunishmentData.php");
+    QUrl url("http://doublef.xyz/InputDataScript/inputPunishmentData.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);

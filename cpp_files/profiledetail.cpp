@@ -1,4 +1,4 @@
-#include "profiledetail.h"
+#include "../header_files/profiledetail.h"
 #include <QDebug>
 
 ProfileDetail::ProfileDetail(QObject *parent) : QObject(parent)
@@ -36,7 +36,7 @@ void ProfileDetail::setProfileData(QObject *item){
     }
 
     if(result4) {
-        result4->setProperty("source", "https://appsapis.000webhostapp.com/teacherPhotoProfile/" + QQmlProperty::read(item, "teacherProfilePicture").toString());
+        result4->setProperty("source", "http://doublef.xyz/teacherPhotoProfile/" + QQmlProperty::read(item, "teacherProfilePicture").toString());
     }
 }
 

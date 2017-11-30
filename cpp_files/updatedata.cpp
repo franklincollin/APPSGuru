@@ -1,7 +1,7 @@
-#include "updatedata.h"
-#include "httpraction.h"
-#include "systemvariable.h"
-#include "dataobject.h"
+#include "../header_files/updatedata.h"
+#include "../header_files/httpraction.h"
+#include "../header_files/systemvariable.h"
+#include "../header_files/dataobject.h"
 
 UpdateData::UpdateData(QObject *parent) : QObject(parent)
 {
@@ -18,7 +18,7 @@ void UpdateData::receiveStudentListing(QString data, QString data1){
 
     setFetchingDataIndicatorRun(this->anObject);
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/getPunishmentData.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/getPunishmentData.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);
@@ -60,7 +60,7 @@ void UpdateData::receiveStudentDataID(QString dataID, QString data){
     setFetchingDataIndicatorRun(this->anObject);
     qDebug() << dataID.split(" ").at(1);
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/punishmentDescription.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/punishmentDescription.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);
@@ -91,7 +91,7 @@ void UpdateData::receiveStudentDataID(QString dataID, QString data){
 }
 
 void UpdateData::updatePunishmentData(QString arg0, QString arg1, QString arg2, QString arg3, QString arg4){
-    QUrl url("https://appsapis.000webhostapp.com/UpdateDataScript/updatePunishmentData.php");
+    QUrl url("http://doublef.xyz/UpdateDataScript/updatePunishmentData.php");
     qDebug() << "This data will updated: " << arg2;
 
     setFetchingDataIndicatorRun(this->anObject);

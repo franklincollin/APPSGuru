@@ -1,7 +1,7 @@
-#include "studentlisting1.h"
+#include "../header_files/studentlisting1.h"
 #include <QObject>
-#include "httpraction.h"
-#include "dataobject.h"
+#include "../header_files/httpraction.h"
+#include "../header_files/dataobject.h"
 
 StudentListing1::StudentListing1(QObject *parent) : QObject(parent)
 {
@@ -18,7 +18,7 @@ void StudentListing1::receiveStudentListing(QString data, QString data1) {
 
     setFetchingDataIndicatorRun(this->anObject);
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/getAppreciationData.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/getAppreciationData.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);
@@ -61,7 +61,7 @@ void StudentListing1::receiveStudentListing(QString data, QString data1) {
 void StudentListing1::receiveStudentDataID(QString dataID, QString data) {
     setFetchingDataIndicatorRun(this->anObject);
 
-    QUrl url("https://appsapis.000webhostapp.com/DataAccessScript/appreciationDescription.php");
+    QUrl url("http://doublef.xyz/DataAccessScript/appreciationDescription.php");
 
     HTTPRAction httpRAction;
     httpRAction.httpUrl(url);
@@ -89,7 +89,7 @@ void StudentListing1::receiveStudentDataID(QString dataID, QString data) {
 }
 
 void StudentListing1::deleteAppreciationData(QString arg0){
-    QUrl url("https://appsapis.000webhostapp.com/DeleteDataScript/deleteAppreciationData.php");
+    QUrl url("http://doublef.xyz/DeleteDataScript/deleteAppreciationData.php");
     qDebug() << "This data will deleted: " << arg0;
 
     setFetchingDataIndicatorRun(this->anObject);
