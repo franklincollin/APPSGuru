@@ -1,1 +1,1 @@
-File untuk tampilan dan komponen-komponen visual lainnya
+Jangan gunakan script yang ada di folder ini
