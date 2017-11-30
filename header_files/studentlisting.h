@@ -20,8 +20,6 @@
 #include <QJsonObject>
 #include <QJsonArray>
 
-//#include <QListData>
-
 class StudentListing : public QObject, public SystemVariable
 {
     Q_OBJECT

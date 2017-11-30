@@ -9,7 +9,7 @@
 #include <QTextCodec>
 #include <QUrl>
 #include <QUrlQuery>
-#include <systemvariable.h>
+#include "systemvariable.h"
 #include "httpraction.h"
 
 class HTTPLogin : public QObject, public SystemVariable
@@ -30,7 +30,8 @@ private:
 
 signals:
     void sendHTTPResponse(QVariant httpResponse, QVariant schoolCode, QVariant teacherNUPTK,
-                          QVariant teacherName, QVariant teacherBirthDay, QVariant motivationText, QVariant teacherProfile);
+                          QVariant teacherName, QVariant teacherBirthDay, QVariant motivationText, QVariant teacherProfile,
+                          QVariant username);
 
 public slots:
     void getLoginData(const QString param, const QString param1);
