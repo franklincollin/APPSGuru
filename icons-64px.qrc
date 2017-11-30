@@ -19,5 +19,6 @@
         <file>icons-64px/017-menu-button-of-three-horizontal-lines.png</file>
         <file>icons-64px/013-user-list.svg</file>
         <file>icons-64px/warning.png</file>
+        <file>icons-64px/logout-icon.png</file>
     </qresource>
 </RCC>

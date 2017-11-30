@@ -8,18 +8,19 @@ QT += qml quick \
 CONFIG += c++11
 
 SOURCES += main.cpp \
-    getappreciationdata.cpp \
-    getpunishmentdata.cpp \
-    httplogin.cpp \
-    studentlisting.cpp \
-    profiledetail.cpp \
-    studentlisting1.cpp \
-    httpraction.cpp \
-    updatedata.cpp \
-    dataobject.cpp \
-    updatedata1.cpp \
-    fragmenthome.cpp \
-    fragmentview.cpp
+    cpp_files/dataobject.cpp \
+    cpp_files/fragmenthome.cpp \
+    cpp_files/fragmentview.cpp \
+    cpp_files/getappreciationdata.cpp \
+    cpp_files/getpunishmentdata.cpp \
+    cpp_files/httplogin.cpp \
+    cpp_files/httplogout.cpp \
+    cpp_files/httpraction.cpp \
+    cpp_files/profiledetail.cpp \
+    cpp_files/studentlisting.cpp \
+    cpp_files/studentlisting1.cpp \
+    cpp_files/updatedata.cpp \
+    cpp_files/updatedata1.cpp
 
 RESOURCES += qml.qrc \
     icons.qrc \
@@ -63,16 +64,17 @@ DISTFILES += \
 ANDROID_PACKAGE_SOURCE_DIR = $$PWD/android
 
 HEADERS += \
-    getappreciationdata.h \
-    getpunishmentdata.h \
-    httplogin.h \
-    studentlisting.h \
-    systemvariable.h \
-    profiledetail.h \
-    studentlisting1.h \
-    httpraction.h \
-    updatedata.h \
-    dataobject.h \
-    updatedata1.h \
-    fragmenthome.h \
-    fragmentview.h
+    header_files/dataobject.h \
+    header_files/fragmenthome.h \
+    header_files/fragmentview.h \
+    header_files/getappreciationdata.h \
+    header_files/getpunishmentdata.h \
+    header_files/httplogin.h \
+    header_files/httplogout.h \
+    header_files/httpraction.h \
+    header_files/profiledetail.h \
+    header_files/studentlisting.h \
+    header_files/studentlisting1.h \
+    header_files/systemvariable.h \
+    header_files/updatedata.h \
+    header_files/updatedata1.h

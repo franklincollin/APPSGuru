@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>modellingAndPositioning.js</file>
+        <file>js/modellingAndPositioning.js</file>
+        <file>js/apps.js</file>
     </qresource>
 </RCC>
